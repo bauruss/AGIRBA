@@ -7,10 +7,10 @@
     background-image: url("../images/test-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 50% 50% 2% 98% / 86% 7% 93% 14% 
+    border-radius: 50% 50% 0% 100% / 86% 0% 100% 14%;  
 }
 .h-box-top {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     display: flex;
     justify-content: space-between;
     padding: 30px 130px;
@@ -19,6 +19,7 @@
     display: flex;
 }
 .li {
+    color: bisque;
     margin-right: 37px;
 }
 .burger {
