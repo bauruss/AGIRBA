@@ -7,7 +7,8 @@
     background-image: url("../images/test-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 50% 50% 0% 100% / 86% 0% 100% 14%;  
+    background-attachment: fixed;
+    border-radius: 58% 42% 0% 100% / 90% 0% 100% 10% 
 }
 .h-box-top {
     /* background-color: aliceblue; */
@@ -18,8 +19,22 @@
 .nav {
     display: flex;
 }
-.li {
-    color: bisque;
+.logo {
+    max-width: 75px;
+    width: 100%;
+    height: 30px;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+}
+.logo a {
+    margin: 0 auto;
+    color: #fff;
+    font-weight: bold;
+}
+.li a {
+    color: #F4F4F4;
+    font-weight: bold;
     margin-right: 37px;
 }
 .burger {
@@ -70,25 +85,36 @@
     flex-wrap: wrap;
     
 }
+.s1-left {
+    background-color: #707070;
+    max-width: 478px;
+    width: 100%;
+    height: 500px;
+    margin-right: 100px;
+    margin-bottom: 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.s1-photo {
+    border-radius: 20px;
+    margin: 20px;
+    /* max-width: 140px;
+    width: 100%; */
+    width: 140px;
+    height: 170px;
+    background-color: #121212;
+}
 .s1-right {
     background-color: antiquewhite;
     max-width: 478px;
     width: 100%;
     height: 315px;
-    margin-right: 147px;
+    border-radius: 20px;
 }
-.s1-left {
-    height: 427px;
-    position: relative;
-}
-.image1 {
-    top: 155px;
-    left: 94px;
-    position: absolute;
-}
-.image2 {
-    position: absolute;
-}
+
 
 
 /* Section 2 style */
@@ -171,10 +197,12 @@
     width: 100%;
     padding: 100px;
 }
+.colection-2 {
+    margin: 0 50px;
+}
 .colection-div1 img {
     max-width: 400px;
-    width: 100%;
-    position: relative;
+    width: 100%; 
 }
 .colection-div2 img {
     max-width: 400px;
@@ -202,7 +230,10 @@
         flex-wrap: wrap;
 }
 .footer {
-    background-color: #121212;
+    max-width: 1440px;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 15px;
 }
 .f-block {
     -webkit-box-pack: center;
@@ -219,19 +250,17 @@
 .f-block:nth-child(1) {
     width: 260px;
 }
+
 .fa-brands {
     font-size: 30px;
     margin-top: 20px;
 }
-.fa-square-twitter {
-    margin: 0 11px;
-    color: #63DAF9;
-}
-.fa-google-plus-g {
+.fa-instagram {
     color: red;
 }
 .fa-facebook {
     color: blue;
+    margin-right: 15px;
 }
 .f-block p {
     margin-top: 22px;
@@ -251,11 +280,16 @@
 .c-li li:nth-child(3) {
     margin-bottom: 21px;
 }
-.Bexosasania {
-    color: #fff;
-    max-width: 1300px;
-    width: 90%;
-    margin: 54px 0 0 139px;
+.fa-envelope,
+.fa-phone,
+.fa-location-dot {
+    color: #F4F4F4;
+}
+.bexo {
+    max-width: 1051px;
+    width: 80%;
+    margin: 50px auto;
+    color: #F4F4F4;
 }
 .bold-white {
     font-weight: bold;
@@ -263,6 +297,8 @@
     color: #fff;
 }
 .semi-bold {
+    max-width: 150px;
+    width: 100%;
     color: #fff;
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
@@ -311,6 +347,16 @@
     .small-shop-box:nth-child(3) {
         margin-bottom: 30px;
     }
+    .f-block {
+        width: 300px;
+        margin-top: 50px;
+    }
+    .s1-general {
+        height: 100%;
+    }
+    .s1-left {
+        align-items: center;
+    }
 }
 
 
@@ -324,10 +370,50 @@
     .h-box-top a {
         margin-right: 50px;
     }
-    .s1-general {
-        height: 100%;
-    }
     .s1-left {
         margin-top: 50px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-right: 100px;
+    }
+    .h-box-bottom {
+        width: 80%;
+    }
+    .s1-general {
+        align-items: center;
+    }
+    .s-4 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .colection-2 {
+        margin: 50px;
+    } 
+}
+
+@media (max-width: 480px) {
+    
+    .f-block {
+        width: 80%;
+    }
+    .f-block:nth-child(4) {
+        margin-top: 40px;
+    }
+    .f-container {
+        text-align: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .footer p {
+        text-align: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-left: 0;
     }
 }
