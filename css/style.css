@@ -3,7 +3,6 @@
     max-height: 1440px;
     width: 100%;
     height: 750px;
-    /* background-color: #05FF26; */
     background-image: url("../images/test-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +10,6 @@
     border-radius: 58% 42% 0% 100% / 90% 0% 100% 10% 
 }
 .h-box-top {
-    /* background-color: aliceblue; */
     display: flex;
     justify-content: space-between;
     padding: 30px 130px;
@@ -314,6 +312,74 @@
 }
 
 
+/* Contact style */
+.contact {
+    max-height: 1440px;
+    width: 100%;
+    background-color: #707070;
+    height: 450px;
+}
+.contact-page {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact-text h2 {
+    font-size: 18px;
+    color: blue;
+}
+.contact-p1 {
+    color: black;
+    font-size: 32px;
+}
+.contact-p {
+    max-width: 800px;
+    width: 70%;
+    font-size: 20px;
+    margin-top: 50px;
+    color: #e0e1e2;
+}
+.right-contact-div h2 {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.right-contact-div a {
+    color: #e0e1e2;
+    font-size: 14px;
+}
+.right-contact-div h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+.right-contact-div p {
+    color: #e0e1e2;
+    font-size: 14px;
+}
+.input {
+    margin-top: 50px;
+    border: none;
+    max-width: 352px;
+    width: 100%;
+    height: 30px;
+}
+.button {
+    max-width: 70px;
+    width: 100%;
+    height: 30px;
+}
+.input:focus {
+    outline: none;
+}
+
 /* Responsive */
 @media (max-width: 1200px) {
     .s2-bottom {
@@ -334,9 +400,6 @@
         width: 100%;
     }
     .shop-box-right {
-        /* display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap; */
         max-width: 1000px;
         width: 90%;
         margin: 0 auto;
@@ -356,6 +419,14 @@
     }
     .s1-left {
         align-items: center;
+    }
+    .contact {
+        height: 100%;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .right-contact-div {
+        margin-top: 50px;
     }
 }
 
