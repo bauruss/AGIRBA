@@ -101,12 +101,14 @@
     width: 100%;
     height: 170px;
     background-color: #121212;
+    /* transition: width 1s; */
 }
 .s1-photo img {
     max-width: 140px;
     width: 100%;
     border-radius: 10px;
     box-shadow: 20px 20px 50px black;
+    transition: width 0.7s;
 }
 .s1-right {
     background-color: #948f8f;
@@ -345,6 +347,11 @@
     font-weight: bold;
     margin-bottom: 10px;
 }
+.colection-1:hover,
+.colection-2:hover,
+.colection-3:hover {
+    transition: width 2s ease-in-out;
+}
 
 
 /* Footer style */
@@ -513,6 +520,51 @@
 }
 .input:focus {
     outline: none;
+}
+
+
+/* hover */
+.s1-photo:hover {
+    width: 240px;
+    cursor: pointer;
+}
+.s1-photo img:hover {
+    width: 240px;
+}
+.li a:hover,
+.logo a:hover,
+.blue-box p:hover {
+    color: #666666;
+}
+.burger:hover {
+    color: #666666;
+    cursor: pointer; 
+}
+.blue-box:hover {
+    cursor: pointer;
+    width: 220px;
+    height: 62px;
+}
+.blue-box p:hover {
+    padding: 20px;
+}
+.shop-1:hover,
+.small-shop-box:hover,
+.shop-1-3:hover {
+    cursor: pointer;
+}
+
+.colection-1:hover,
+.colection-2:hover,
+.colection-3:hover {
+    width: 550px;
+    object-fit: cover;
+    background-color: #e0e1e2;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.button:hover {
+    cursor: pointer;
 }
 
 /* Responsive */
