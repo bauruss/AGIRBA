@@ -414,7 +414,7 @@
 /* Footer style */
 .f-container {
     max-width: 1051px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -499,6 +499,7 @@
     color: #fff;
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
 }
 .blue-text {
     color: #5863F8;
@@ -654,11 +655,11 @@
     }
     .shop-box-right {
         max-width: 1000px;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
     .small-shop-box {
-        width: 50%;
+        width: 70%;
     }
     .small-shop-box:nth-child(3) {
         margin-bottom: 30px;
@@ -746,6 +747,7 @@
         margin: 50px;
     } 
 }
+
 
 @media (max-width: 480px) {
     
